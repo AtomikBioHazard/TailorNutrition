@@ -1,0 +1,1 @@
+import{toTop} from './modules/toTop';

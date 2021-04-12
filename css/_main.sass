@@ -1,0 +1,127 @@
+main
+  position: relative
+  top: -50px
+  margin: auto
+  background: #fff
+  width: 95%
+  border-radius: 6px
+  box-shadow: 0 16px 24px 2px rgba(#000,.14)
+  .services
+    padding: 80px 0 50px
+    .title
+      font-weight: 700
+      text-transform: uppercase
+      color: #322f2c
+      margin-bottom: 4rem
+      h1
+        font-size: 3rem
+    .media
+      margin: 50px 0
+      h5
+        color: #322f2c
+        border-bottom: 2px solid #e7e7e7
+        padding-bottom: 5px
+        margin-bottom: 30px
+
+  .trust
+    padding: 15px 0
+    position: relative
+    p
+      font-size: 1.7rem
+    .title
+      margin-bottom: 40px
+    h5
+      font-size: 1.5rem
+      margin: 28px 0 12px
+    ul
+      -webkit-column-count: 2
+      -moz-column-count: 2
+      column-count: 2
+      li
+        margin-bottom: 15px
+        font-size: 1rem
+    .gallery
+      img
+        width: 100%
+        -o-object-fit: cover
+        object-fit: cover
+        height: 100%
+      .gal-img
+        display: inline-block
+        width: max-content
+        position: relative
+        z-index: 1
+        &::after
+          content: ""
+          width: 100%
+          height: 100%
+          background-color: rgba(0, 0, 0, 0.6)
+          position: absolute
+          top: 0
+          left: 0
+          opacity: 0
+        &:hover
+          cursor: pointer
+          &::after
+            opacity: 1
+      .gal-img3
+        top: -50%
+        left: 50%
+
+  .prices
+    padding: 70px 0
+    .title
+      text-align: center
+      font-weight: 300
+      font-size: 3.2rem
+      color: $general_text
+      margin-bottom: 2rem
+    .plan
+      background: #FFF
+      text-align: center
+      padding: 50px 0
+      box-shadow: 0 0 15px 0 rgba(#000,.35)
+      .name
+        font-size: 2rem
+        line-height: 2rem
+        font-weight: 300
+        margin-bottom: 2rem
+      .price
+        font-weight: 300
+        font-size: 3rem
+        margin-bottom: 30px
+      .charasteristics
+        list-style: none
+        padding: 0 20px
+        margin-bottom: 50px
+        li
+          font-size: 1.1rem
+          padding: 15px 0
+          border-bottom: 1px solid #DEDEDE
+      .btn
+        width: 70%
+        font-size: 1rem
+        padding: 15px 0
+        text-align: center
+        display: inline-block
+        border-radius: 100px
+      &.green
+        .name, .price
+          color: #86B773
+        .btn
+          color: #86B773
+          border: 2px solid #86B773
+          &:hover
+            background: #86B773
+            color: #FFF
+      &.active
+        background: #4C8DCE
+        color: #FFF
+        .btn
+          color: #FFF
+          border: 2px solid #FFF
+          &:hover
+            background: #FFF
+            color: #4C8DCE
+
+  
