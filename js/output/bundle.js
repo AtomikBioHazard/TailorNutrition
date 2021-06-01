@@ -16,7 +16,17 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_toTop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/toTop */ \"./src/modules/toTop.js\");\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_toTop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/toTop */ \"./src/modules/toTop.js\");\n/* harmony import */ var _modules_parallax__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/parallax */ \"./src/modules/parallax.js\");\n\n\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/modules/parallax.js":
+/*!*********************************!*\
+  !*** ./src/modules/parallax.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"test\": () => (/* binding */ test)\n/* harmony export */ });\nvar test = $('#test');\ntest.on('ready', function () {\n  $(window).scroll(function () {\n    var windowWidth = $(window).width();\n\n    if (windowWidth > 800) {\n      var scroll = $(window).scrollTop();\n      $('main .container').css({\n        'transform': 'translate(0px,' + scroll / 2 + '%)'\n      });\n    }\n  });\n  $(window).rezise(function () {\n    var windowWidth = $(window).width();\n\n    if (windowWidth < 800) {\n      $('main .container').css({\n        'transform': 'translate(0px, 0px)'\n      });\n    }\n  });\n});\n\n\n//# sourceURL=webpack:///./src/modules/parallax.js?");
 
 /***/ }),
 
